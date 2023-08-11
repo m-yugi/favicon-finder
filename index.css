@@ -1,0 +1,13 @@
+/* * {
+  background-color: black;
+  color: white;
+} */
+span {
+  display: block;
+}
+#image {
+  display: none;
+}
+#error_text {
+  display: none;
+}
