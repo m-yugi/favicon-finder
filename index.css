@@ -1,13 +1,86 @@
-/* * {
-  background-color: black;
-  color: white;
-} */
-span {
-  display: block;
+* {
+  font-family: "Chivo Mono", monospace;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  color: #48cae4;
+  background-color: #0077b6;
+  margin: 0;
+  padding: 0;
+  /* background-color: #344e41; */
+}
+p {
+  background-color: rgba(0, 0, 0, 0.336);
+  text-align: center;
+  align-items: center;
+  font-size: 38px;
+  margin: 0;
+  padding: 5px;
 }
 #image {
-  display: none;
+  height: 261px;
+  width: 400px;
+  /* margin: ; */
+}
+#main_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: #a3b18a; */
+  background-color: #90e0ef;
+  border: 3px solid #ade8f4;
+  /* border: 3px solid#588157; */
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 144px;
+  width: 1200px;
+  height: 350px;
+  box-shadow: #023d8aa5 15px 25px 20px 15px;
+}
+#site_name {
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #00b4d8ba;
+  height: 27px;
+  width: 200px;
+  background-color: #caf0f8;
+}
+#site_name::placeholder {
+  opacity: 0.6;
+  color: #0076b6bf;
+  padding: 5px;
 }
 #error_text {
   display: none;
+  position: absolute;
+  color: #03045e;
+  font-size: 16px;
+  margin: 0;
+  top: 521px;
+  left: 430px;
+}
+#left_side_sub_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#btn {
+  /* outline: none; */
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: 2px solid #023d8a38;
+  background-color: #48cae4;
+  color: #01679e;
+  transform: translateY(0);
+  transition-duration: 70ms;
+  transition-timing-function: ease-in-out;
+  box-shadow: #023d8aa5 2px 2px 2px 1px;
+}
+#btn:active {
+  transition-duration: 70ms;
+  transform: translateY(5px);
+  box-shadow: #023d8aa5 0px 0px 0px 0px;
+  transition-timing-function: ease-in-out;
 }

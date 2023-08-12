@@ -3,18 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
     <title>favicon finder</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h4>welcome to favicon finder</h4>
-    <span>
-      please provide the name of the website that you want the favicon of
-      <input type="text" placeholder="name" id="site_name" />
-      <button onclick="onCall()">submit</button>
-    </span>
-    <img id="image" alt="here lied an image RIP" />
-    <h5 id="error_text"></h5>
+    <p>welcome to favicon finder</p>
+    <div id="main_container">
+      <div id="left_side_sub_container">
+        <img
+          src="/images/undraw_domain_names_re_0uun.svg"
+          alt=" here lived an image RIP "
+          id="image"
+        />
+        <!-- <img id="image" alt="here lied an image RIP" /> -->
+        <h5 id="error_text">
+          the site you have entered might not exist on the internet or it might
+          exist with a different name
+        </h5>
+      </div>
+      <div id="search_bar">
+        <label for=""></label>
+        <input type="text" placeholder="name" id="site_name" />
+        <button id="btn" onclick="onCall() ">submit</button>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

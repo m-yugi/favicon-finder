@@ -4,14 +4,13 @@ async function onCall() {
 
   const image = document.getElementById("image");
   const error_text = document.getElementById("error_text");
-  image.style.display = "none";
   error_text.style.display = "none";
 
   /* created a XMLHttpRequest */
   const xhr = new XMLHttpRequest();
   const user_input = document.getElementById("site_name").value;
   // const url = `https://icons.duckduckgo.com/ip3/www.${user_input}.com.ico`;
-  const url = `https://www.google.com/s2/favicons?domain=www.${user_input}.com&sz=32&type=png`;
+  const url = `https://www.google.com/s2/favicons?domain=www.${user_input}.com&sz=128&type=png`;
   xhr.open("GET", `https://www.${user_input}.com`, true);
   xhr.onreadystatechange = function () {
     // checking if the request had came back with data
@@ -20,11 +19,16 @@ async function onCall() {
       if (xhr.status === 200) {
         image.src = url;
         image.style.display = "block";
+        image.style.height = "200px";
+        image.style.width = "200px";
       } else {
         // if we got an error then we will give the error out
         error_text.style.display = "block";
         error_text.innerHTML =
           " the site you have entered might not exist on the internet or it might exist with a different name";
+        image.src = "/images/undraw_domain_names_re_0uun.svg";
+        image.style.height = "261px";
+        image.style.width = "400px";
       }
     }
   };
