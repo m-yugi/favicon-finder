@@ -26,7 +26,7 @@ async function onCall() {
         error_text.style.display = "block";
         error_text.innerHTML =
           " the site you have entered might not exist on the internet or it might exist with a different name";
-        image.src = "/images/undraw_domain_names_re_0uun.svg";
+        image.src = "undraw_domain_names_re_0uun.svg";
         image.style.height = "261px";
         image.style.width = "400px";
       }
