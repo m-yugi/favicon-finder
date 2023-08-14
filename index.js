@@ -17,7 +17,7 @@ async function onCall() {
     if (xhr.readyState === 4) {
       // if the status is 200 we will display the favicon
       if (xhr.status === 200) {
-        image.src = url;
+        image.setAttribute("src", url);
         image.style.display = "block";
         image.style.height = "200px";
         image.style.width = "200px";
@@ -26,7 +26,7 @@ async function onCall() {
         error_text.style.display = "block";
         error_text.innerHTML =
           " the site you have entered might not exist on the internet or it might exist with a different name";
-        image.src = "undraw_domain_names_re_0uun.svg";
+        image.setAttribute("src", "undraw_domain_names_re_0uun.svg");
         image.style.height = "261px";
         image.style.width = "400px";
       }
